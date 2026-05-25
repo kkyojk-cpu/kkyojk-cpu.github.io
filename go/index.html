@@ -1,1 +1,17 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="refresh" content="0;url=https://kkyojk-cpu.github.io/disc-recovery-landing/"><title>이동 중...</title><script>fetch('https://recovery-log-production.up.railway.app/go').catch(function(){});window.location.replace('https://kkyojk-cpu.github.io/disc-recovery-landing/');</script></head><body><a href="https://kkyojk-cpu.github.io/disc-recovery-landing/">클릭하여 이동</a></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>이동 중...</title>
+  <script>
+    try { navigator.sendBeacon('https://recovery-log-production.up.railway.app/go-ping'); } catch(e) {}
+    fetch('https://recovery-log-production.up.railway.app/go-ping', { keepalive: true }).catch(function(){});
+    setTimeout(function() {
+      window.location.replace('https://kkyojk-cpu.github.io/disc-recovery-landing/');
+    }, 200);
+  </script>
+</head>
+<body>
+  <a href="https://kkyojk-cpu.github.io/disc-recovery-landing/">클릭하여 이동</a>
+</body>
+</html>
