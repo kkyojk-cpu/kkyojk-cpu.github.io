@@ -6,12 +6,8 @@
   <script>
     try { navigator.sendBeacon('https://recovery-log-production.up.railway.app/go-ping'); } catch(e) {}
     fetch('https://recovery-log-production.up.railway.app/go-ping', { keepalive: true }).catch(function(){});
-    setTimeout(function() {
-      window.location.replace('https://kkyojk-cpu.github.io/disc-recovery-landing/');
-    }, 200);
+    window.location.replace('https://kkyojk-cpu.github.io/disc-recovery-landing/');
   </script>
 </head>
-<body>
-  <a href="https://kkyojk-cpu.github.io/disc-recovery-landing/">클릭하여 이동</a>
-</body>
+<body style="display:none"></body>
 </html>
